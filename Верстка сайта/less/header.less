@@ -1,0 +1,273 @@
+//out:false
+
+@import url(mixin.less);
+@import url(variable.less);
+
+.page-header {
+	width: 100%;
+	padding: 40px 150px 40px 150px;
+	box-sizing: border-box;
+	background-color: rgba(17, 17, 17, 0.7);
+	background-image: url(../img/bg_photo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&-top {
+		width: 100%;
+		margin: 0 0 285px 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-logo {
+			text-decoration: none;
+			.text(raleway, 400, 34px);
+			line-height: 1.2;
+			letter-spacing: -0.04em;
+			color: #ffffff;
+			display: flex;
+			align-items: center;
+			margin: 0 219px 0 0;
+
+			&-icon {
+				fill: currentColor;
+			}
+
+			&:hover {
+				color: #c7b299;
+			}
+
+			&:active {
+				color: #ffffff;
+			}
+		}
+
+		&-menu {
+			.text (montserrat, 300);
+			line-height: 1.2;
+			margin: 0 63px 0 0;
+
+			&-checkbox,
+			&-btn {
+				display: none;
+			}
+
+			&-list {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				display: flex;
+
+				&-item {
+					margin: 0 30px 0 0;
+
+					&-link {
+						text-decoration: none;
+						color: #ffffff;
+
+						:last-child {
+							margin: 0;
+						}
+
+						&:hover {
+							color: #c7b299;
+						}
+
+						&:active {
+							color: #ffffff;
+						}
+					}
+				}
+			}
+		}
+
+		&-basket {
+			color: #ffffff;
+			margin: 0 28px 0 0;
+			border: 0;
+			cursor: pointer;
+			background-color: transparent;
+			padding: 0;
+			box-sizing: border-box;
+
+			&-icon {
+				fill: currentColor;
+			}
+
+			&:hover {
+				color: #c7b299;
+			}
+
+			&:active {
+				color: #ffffff;
+			}
+		}
+
+		&-search {
+			color: #ffffff;
+			border: 0;
+			cursor: pointer;
+			background-color: transparent;
+			padding: 0;
+			box-sizing: border-box;
+
+			&-icon {
+				fill: currentColor;
+			}
+
+			&:hover {
+				color: #c7b299;
+			}
+
+			&:active {
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.page-header-bot {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&-switchleft {
+		max-width: 40px;
+		width: 100%;
+		height: 73px;
+		opacity: 0.5;
+		border: 0;
+		padding: 0;
+		box-sizing: border-box;
+		background-color: transparent;
+		color: #ffffff;
+		cursor: pointer;
+
+		&-svg {
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: #d3c1ad;
+			;
+		}
+
+		&:active {
+			color: #ffffff;
+		}
+	}
+
+	&-box {
+		width: @width/3;
+		text-align: center;
+
+		&-topttl {
+			.text(raleway, 500, 36px);
+			color: #ffffff;
+			margin: 0 0 14px 0;
+		}
+
+
+		&-mainttl {
+			.text(raleway, 800, 52px);
+			color: #ffffff;
+			line-height: 1.2;
+			margin: 0 0 19px 0;
+		}
+
+		&-txt {
+			.text(montserrat, 300, 16px);
+			line-height: 24px;
+			color: #ffffff;
+			margin: 0 0 52px 0;
+		}
+
+		&-btn {
+			max-width: 170px;
+			width: 100%;
+			height: 53px;
+			background-color: #998675;
+			border-radius: 3px;
+			.text(realeway, 800);
+			line-height: 23px;
+			text-transform: uppercase;
+			color: #ffffff;
+			border: 0;
+			cursor: pointer;
+
+			&:hover {
+				color: darken(#998675, 80%);
+				background-color: lighten(#998675, 20%);
+			}
+
+			&:active {
+				color: #ffffff;
+				background-color: #998675;
+				border: 0;
+			}
+		}
+	}
+
+	&-switchright {
+		max-width: 40px;
+		width: 100%;
+		height: 73px;
+		opacity: 0.5;
+		border: 0;
+		padding: 0;
+		box-sizing: border-box;
+		background-color: transparent;
+		color: #ffffff;
+		cursor: pointer;
+
+		&-svg {
+			fill: currentColor;
+		}
+
+		&:hover {
+			color: #d3c1ad;
+			;
+		}
+
+		&:active {
+			color: #ffffff;
+		}
+
+
+	}
+
+	&-pagination {
+		width: 100%;
+		margin: 329px 0 0 0;
+		display: flex;
+		justify-content: center;
+
+		&-item {
+			display: block;
+			width: 11px;
+			height: 11px;
+			background-color: #ffffff;
+			border-radius: 50%;
+			border: 1px solid transparent;
+			margin: 0 10px 0 0;
+			cursor: pointer;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.0);
+				border: 1px solid #d3c1ad;
+				transform: scale(1.2);
+			}
+
+			&:active {
+				background-color: #ffffff;
+			}
+		}
+	}
+}

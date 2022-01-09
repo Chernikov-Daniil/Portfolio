@@ -1,0 +1,33 @@
+//out:false
+
+.partners {
+	width: 100%;
+	padding: 140px 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../img/bg_partners.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&-link {
+		text-decoration: none;
+		margin: 0 90px 0 0;
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&:hover {
+			filter: brightness(60%);
+		}
+
+		&:active {
+			filter: none;
+		}
+	}
+}

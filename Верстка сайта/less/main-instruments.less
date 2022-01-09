@@ -1,0 +1,65 @@
+//out:false
+
+@import url(mixin.less);
+
+.instruments {
+	width: 100%;
+	padding: 80px 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&-card {
+		max-width: 266px;
+		width: 100%;
+		margin: 0 34px 0 0;
+		text-align: center;
+		color: #555555;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&-svg {
+			fill: currentColor;
+		}
+
+		&-tittle {
+			width: 100%;
+			.text(Raleway, 600, 22px);
+			line-height: 1.2;
+			margin: 30px 0 19px 0;
+		}
+
+		&-txt {
+			.text(montserrat, 300);
+			line-height: 24px;
+			color: #8c8c8c;
+			margin: 0 0 30px 0;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 70px;
+			height: 3px;
+			background-color: #f1eee9;
+		}
+
+		&:hover &-svg {
+			color: #c7b299;
+		}
+
+		&:hover &-tittle {
+			color: #c7b299;
+		}
+
+		&:hover:after {
+			background-color: #c7b299;
+		}
+	}
+}

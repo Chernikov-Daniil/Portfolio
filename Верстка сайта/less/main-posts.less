@@ -1,0 +1,257 @@
+//out:false
+
+@import url(mixin.less);
+@import url(variable.less);
+
+.posts {
+	max-width: @width;
+	width: 100%;
+	padding: 82px 0 80px 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&-tittle {
+		width: 100%;
+		text-align: center;
+		.text (raleway, 600, 30px);
+		line-height: 1.2;
+		color: #555555;
+		margin: 0 0 30px 0;
+	}
+
+	&-txt {
+		max-width: 757px;
+		width: 100%;
+		text-align: center;
+		.text (montserrat, 300, 16px);
+		line-height: 28px;
+		color: #8c8c8c;
+		margin: 0 ((@width - 757px) / 2) 40px ((@width - 757px) / 2);
+	}
+
+	&-card {
+		max-width: 370px;
+		width: 100%;
+		margin: 0 30px 40px 0;
+		background-color: rgba(119, 119, 119, 0.0);
+		border: 1px solid #f8f8f8;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		&-img {
+			width: 370px;
+			height: 220px;
+		}
+
+		&-date {
+			display: block;
+			max-width: 50px;
+			width: 100%;
+			padding: 9px 10px 9px 11px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #363636;
+			border-radius: 3px 3px 0px 0px;
+			position: absolute;
+			.text (montserrat, 300, 24px);
+			line-height: 20px;
+			color: #ffffff;
+			top: 20px;
+			left: 20px;
+		}
+
+		&-month {
+			max-width: 50px;
+			width: 100%;
+			padding: 7px 13px 6px 14px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			background-color: #252525;
+			border-radius: 0px 0px 3px 3px;
+			position: absolute;
+			.text (roboto, 400, 12px);
+			line-height: 20px;
+			color: #ffffff;
+			top: 55px;
+			left: 20px;
+		}
+
+		&-pagination {
+			width: 100%;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			top: 185px;
+			left: 0;
+
+			&-item {
+				display: block;
+				width: 11px;
+				height: 11px;
+				background-color: none;
+				border-radius: 50%;
+				border: 1px solid transparent;
+				margin: 0 10px 0 0;
+				cursor: pointer;
+
+				&:last-child {
+					margin: 0;
+				}
+
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.0);
+					border: 1px solid #d3c1ad;
+					transform: scale(1.2);
+				}
+
+				&:active {
+					background-color: #ffffff;
+				}
+			}
+		}
+
+		&-wrp {
+			padding: 30px 44px 33px 29px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
+			&-heading {
+				.text (raleway, 500, 20px);
+				line-height: 1.2;
+				color: #555555;
+				margin: 0 0 19px 0;
+			}
+
+			&-txt {
+				.text (montserrat, 300);
+				line-height: 22px;
+				color: #8c8c8c;
+				margin: 0 0 27px 0;
+			}
+
+			&-link {
+				.text (montserrat, 300);
+				line-height: 20px;
+				color: #c7b299;
+				text-decoration: none;
+				position: relative;
+				padding: 0 14px 0 0;
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+
+				&::after {
+					content: '';
+					display: block;
+					position: absolute;
+					border: 6px solid transparent;
+					border-left: 7px solid #c7b299;
+					top: 0;
+					right: -9px;
+				}
+
+				&:hover {
+					color: darken(#c7b299, 30%);
+				}
+
+				&:active {
+					color: #c7b299;
+					;
+				}
+
+				&:hover::after {
+					content: '';
+					display: block;
+					position: absolute;
+					border: 6px solid transparent;
+					border-left: 7px solid darken(#c7b299, 30%);
+					top: 0;
+					right: -9px;
+				}
+
+				&:active::after {
+					content: '';
+					display: block;
+					position: absolute;
+					border: 6px solid transparent;
+					border-left: 7px solid #c7b299;
+					top: 0;
+					right: -9px;
+				}
+			}
+		}
+
+		&:hover &-img {
+			filter: brightness(30%);
+		}
+
+		&:hover &-date {
+			background-color: #c7b299;
+			color: #ffffff;
+		}
+
+		&:hover &-month {
+			background-color: #a48d72;
+			color: #ffffff;
+		}
+
+		&:hover &-wrp {
+			background-color: #362f2d;
+
+			&-heading {
+				color: #c7b299;
+			}
+
+			&-txt {
+				color: #ffffff;
+			}
+		}
+
+		&:nth-child(5) {
+			margin: 0 0 40px 0;
+		}
+	}
+
+	&-wrp {
+		width: 100%;
+		text-align: center;
+
+		&-btn {
+			max-width: 22px;
+			width: 100%;
+			height: 22px;
+			border: none;
+			background-color: transparent;
+			border-radius: 11px;
+			border-color: #d1d1d1;
+			cursor: pointer;
+			margin: 0 8px 0 0;
+			padding: 0;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			color: #d1d1d1;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			&-svg {
+				fill: currentColor;
+			}
+
+			&:hover {
+				color: #c7b299;
+			}
+
+			&:active {
+				color: #d1d1d1;
+			}
+		}
+
+	}
+
+}
