@@ -1,0 +1,175 @@
+.footer {
+  width: 100%;
+  color: white;
+  background-color: #222222;
+  padding: 50px 40px 20px 40px;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer__bot_list {
+      display: none;
+    }
+  }
+
+  .applications {
+    max-width: 290px;
+    margin-right: 176px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    width: 100%;
+    fill: white;
+    align-self: flex-start;
+  }
+
+  .box-link {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .apple-link,
+  .google-link {
+    display: block;
+    width: 137px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .apple-link {
+    background-image: url(../img/appstore_big.png);
+    margin-right: 20px;
+  }
+
+  .google-link {
+    background-image: url(../img/googleplay_big.png);
+  }
+
+  .footer-title {
+    color: white;
+  }
+}
+
+.wrp-list {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+  li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+  }
+
+  a,
+  h3 {
+    font-family: Proxima-Nova;
+    font-size: 16px;
+    line-height: 110%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    color: #acaff3;
+  }
+
+  a:hover {
+    color: orange;
+  }
+
+  a:active {
+    color: white;
+  }
+}
+
+.contacts {
+  width: 100%;
+  margin: 12px 0 0 0;
+  font-family: Proxima-Nova;
+  font-size: 16px;
+  line-height: 110%;
+
+  &__title {
+    color: #acaff3;
+    margin: 0 0 23px 0;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0 0 16px 0;
+    padding-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .phone::before,
+  .email::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .phone::before {
+    background-image: url(../img/phone.png);
+  }
+
+  .email::before {
+    background-image: url(../img/mail.png);
+    background-size: 150%;
+  }
+}
+
+hr {
+  background: #d6d7f9;
+}
+
+.footer__bot {
+  font-family: Proxima-Nova;
+  font-size: 16px;
+  line-height: 110%;
+  color: #ffffff;
+  padding: 23px 0 0 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &_list {
+    list-style-type: none;
+    display: flex;
+  }
+
+  a {
+    width: 25px;
+    height: 25px;
+    margin: 0 8px 0 0;
+    fill: white;
+
+    &:hover {
+      fill: rgb(61, 61, 255);
+    }
+
+    &:active {
+      fill: white;
+    }
+  }
+}
