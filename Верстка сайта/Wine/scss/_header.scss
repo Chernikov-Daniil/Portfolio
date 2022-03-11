@@ -1,0 +1,104 @@
+.header {
+  background-image: url(../img/wine.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: $fontFamily;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 126%;
+  padding: 30px 405px 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__text {
+    display: block;
+    min-width: 50%;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0 0 20px 0;
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+  &__menu {
+    max-width: 1110px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  &__btn {
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: $gold;
+    border: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: $fontFamily;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+
+    &:nth-child(4) {
+      margin: 0 30px 0 0;
+    }
+
+    &:hover {
+      color: $gold;
+      background-color: rgb(53, 45, 46);
+      opacity: 0.8;
+      transition: 0.4s;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: $gold;
+    }
+  }
+}
+
+.menu {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 583px 0;
+  }
+  &__item {
+    max-width: 1110px / 4;
+    min-width: 25%;
+    padding: 13px 0;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-left: none;
+    text-align: center;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: $gold;
+      transition: 0.2s;
+    }
+
+    &:active {
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.degustation {
+  background-color: $black;
+  padding: 129px 405px 100px 405px;
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 1110px;
+    width: 100%;
+    padding: 65px 0 80px 0;
+    box-sizing: border-box;
+    border: 3px solid #c4c4c4;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img-grape {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-image: url(../img/grape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -80px;
+    left: -35px;
+  }
+
+  &__img-barrel {
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    background-image: url(../img/barrel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -65px;
+    right: -53px;
+  }
+
+  &__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 0 70px 0;
+    position: absolute;
+    background-color: $black;
+    top: -34px;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  &__overview {
+    max-width: 539px;
+    width: 100%;
+    margin: 40px 0 80px 0;
+    text-align: center;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 118px;
+      height: 1px;
+      background-color: #ffffff;
+      position: absolute;
+      top: -40px;
+      left: 212px;
+    }
+  }
+
+  &__form {
+    max-width: 541px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.form {
+  &__info {
+    width: 47%;
+    margin: 0 0 40px 0;
+    height: 30px;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    background: $black;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+
+    &::placeholder {
+      color: #ffffff;
+      opacity: 1;
+      transition: 0.6s;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+      opacity: 0;
+      transition: 0.6s;
+    }
+  }
+
+  &__btn {
+    max-width: 541px;
+    width: 100%;
+    min-height: 50px;
+    padding: 14px 0;
+    box-sizing: border-box;
+    background-color: $black;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $gold;
+      transition: 0.4s;
+    }
+
+    &:active {
+      background-color: $black;
+    }
+  }
+}
+
+.adress {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
